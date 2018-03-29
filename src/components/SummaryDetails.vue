@@ -21,7 +21,6 @@
         el-row
           el-col.bold(:sm="6") Your query
           el-col(:sm="12") {{ formData.query }}
-
 </template>
 
 <script>
@@ -44,7 +43,7 @@ export default {
   .summary-details
     text-align left
     padding-top 1rem
-  
+
   .el-row
     margin-bottom .6rem
 </style>
