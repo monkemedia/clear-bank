@@ -1,6 +1,11 @@
 <template lang="pug">
   div
     .page-container
+      header
+        .clearBank-background
+        .headline
+          h1.common-page-title Contact us
+          p.common-intro-text Experience the ClearBank® difference.
       el-row
         el-col.form-container(:sm="24" :md="12")
           .form-box
@@ -32,6 +37,11 @@ export default {
 <style lang="stylus" scoped>
   .page-container
     padding-top 3rem
+
+  .headline
+    padding 2rem 0 2.5rem
+    position relative
+    text-align center
 
   .form-container
     margin 0 auto

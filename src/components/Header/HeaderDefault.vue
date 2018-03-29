@@ -1,13 +1,9 @@
 <template lang="pug">
   header
-    .clear-bank-background
     .page-container
       .content
         a.logo
           span.sr-only Welcome to ClearBank®
-      .content
-        h1.common-page-title Contact us
-        p.common-intro-text Experience the ClearBank® difference.
 </template>
 
 <script>
@@ -19,13 +15,12 @@ export default {
 <style lang="stylus" scoped>
   header
     z-index 50
-    position relative
-    max-height 450px
-    height 100vh
-    position relative
+    position absolute
+    top 0
     text-align center
     padding 0 20px
     overflow hidden
+    width 100%
 
   .content
     z-index 1
