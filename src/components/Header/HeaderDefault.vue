@@ -18,14 +18,13 @@ export default {
     position absolute
     top 0
     text-align center
-    padding 0 20px
     overflow hidden
     width 100%
 
   .content
     z-index 1
     position relative
-    padding 2rem 0
+    padding 2rem 1.8rem
 
   .logo
     background-image url('../../assets/clear.bank-white-logo.svg')
