@@ -50,11 +50,11 @@ export default {
       rules: {
         firstName: [
           { required: true, message: 'Whoops! Please enter your first name' },
-          { validator: validateLettersOnly, trigger: 'blur' }
+          { validator: validateLettersOnly, trigger: 'blur, change' }
         ],
         surname: [
           { required: true, message: 'Whoops! Please enter your surname' },
-          { validator: validateLettersOnly, trigger: 'blur' }
+          { validator: validateLettersOnly, trigger: 'blur, change' }
         ],
         mobile: [
           { required: true, message: 'Whoops! Please enter your mobile number', trigger: 'blur, change' }
@@ -77,13 +77,13 @@ export default {
     submitForm () {
       // Validate form before submitting
       this.$refs['form'].validate((valid) => {
-        // if (!valid) {
-        //   return false
-        // }
+        if (!valid) {
+          return false
+        }
 
         this.isLoading = true
         return this.$store.dispatch('form/submitForm', this.form)
-          .then((success) => {
+          .then(() => {
             this.$notify({
               title: 'Success',
               message: 'Form has been sent',
@@ -91,14 +91,13 @@ export default {
             })
             this.isLoading = false
           })
-          .catch((err) => {
+          .catch(() => {
             this.$notify({
               title: 'Error',
               message: 'Whoops! something has gone wrong. Try again',
               type: 'error'
             })
             this.isLoading = false
-            console.log('ERROR: ', err)
           })
       })
     },

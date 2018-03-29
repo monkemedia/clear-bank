@@ -1,7 +1,7 @@
 {
-  "name": "vue-form-test",
+  "name": "ClearBank",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "A Vue.js project demonstrating a 'contact form' using VUEX, Element.io, Stylus, Axios and Pug.",
   "author": "monkemedia <info@monkemedia.co.uk>",
   "private": true,
   "scripts": {
