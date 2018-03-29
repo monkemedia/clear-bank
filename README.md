@@ -1,6 +1,10 @@
-# vue-form-test
+# ClearBank®
 
-> A Vue.js project
+![](https://img.shields.io/badge/vue-2.5.2-green.svg)
+
+> A Vue.js project demonstrating a 'contact form' using VUEX, Element.io, Stylus, Axios and Pug.
+
+  [Click here](https://clear-bank-test.netlify.com/#/) to view the live demo of this project
 
 ## Build Setup
 
